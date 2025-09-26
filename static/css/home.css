@@ -1,0 +1,56 @@
+
+/* 通用的，首页的generate按钮的 发光效果 */
+.glow {
+    position: relative;
+}
+
+.glow::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(45deg, #FF3366, #FF6B3D, #9D34DA);
+    border-radius: inherit;
+    filter: blur(15px);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.glow:hover::before {
+    opacity: 0.5;
+}
+
+@keyframes glow {
+    0% {
+        transform: translate(-100%, -100%) rotate(45deg);
+    }
+
+    100% {
+        transform: translate(100%, 100%) rotate(45deg);
+    }
+}
+
+
+/* 磨砂玻璃效果 */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+@keyframes logoWobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.logo-hover {
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+}
+
+.logo-hover:hover {
+    animation: logoWobble 0.5s ease-in-out infinite;
+}

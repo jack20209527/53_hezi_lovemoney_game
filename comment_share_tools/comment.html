@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twikoo 本地测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>欢迎来到我的本地测试页面</h1>
+    <p>这个页面是用来测试 Twikoo 评论系统的。</p>
+
+    <div id="twikoo"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.30/dist/twikoo.all.min.js"></script>
+    
+    <script>
+    twikoo.init({
+      envId: 'http://localhost:8080', // 这里的地址需要替换成你本地后端启动后显示的地址
+      el: '#twikoo',
+      path: location.pathname
+    })
+    </script>
+
+</body>
+</html>

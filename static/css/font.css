@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'font_common_nav_title'; /* 设置字体名称 网站标题 */
+    src: url('../fonts/font_nav_logo_title.ttf') format('truetype'); /* 设置字体文件路径 */
+    font-weight: bold; /* 设置字体粗细 */
+    font-style: normal; /* 设置字体样式 */
+  }
+
+  @font-face {
+    font-family: 'font_content_title_bold_big'; /* 设置字体名称 小标题 */
+    src: url('../fonts/font_content_title_bold_big.ttf') format('truetype'); /* 设置字体文件路径 */
+    font-weight: bold; /* 设置字体粗细 */
+    font-style: normal; /* 设置字体样式 */
+  }
+  
+  @font-face {
+    font-family: 'font_content_title_bold_small'; /* 子标题 */
+    src: url('../fonts/font_content_title_bold_small.ttf') format('truetype'); /* 设置字体文件路径 */
+    font-weight: normal; /* 设置字体粗细 */
+    font-style: normal; /* 设置字体样式 */
+  }
+
+  @font-face {
+    font-family: 'font_blog_small_content'; /* 设置字体名称 小标题 */
+    src: url('../fonts/font_blog_small_content.ttf') format('truetype'); /* 设置字体文件路径 */
+    font-weight: normal; /* 设置字体粗细 */
+    font-style: normal; /* 设置字体样式 */
+  }
+  
+
+
