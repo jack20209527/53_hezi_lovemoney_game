@@ -13,24 +13,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="canonical" href="https://history-timeline.org/" />
 
-	<style>
-		@keyframes logoWobble {
-			0% { transform: rotate(0deg); }
-			25% { transform: rotate(-10deg); }
-			75% { transform: rotate(10deg); }
-			100% { transform: rotate(0deg); }
-		}
-		
-		.logo-hover {
-			transform-origin: bottom center;
-			transition: transform 0.3s ease;
-		}
-		
-		.logo-hover:hover {
-			animation: logoWobble 0.5s ease-in-out infinite;
-		}
-	</style>
-
 	<!-- 通用部分11 -->
 	<!-- <link rel="stylesheet" href="/static/tailwind.css"> -->
     <!-- 使用编译后的CSS文件 -->
@@ -55,6 +37,15 @@
 	<!-- 不通用-->
 	<script src="/static/js/list_data.js"></script>
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LCLQMC0H3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LCLQMC0H3M');
+</script>
 
 </head>
 

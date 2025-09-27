@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleElement = document.getElementById('comment-title');
 
     // 设置标题
-    titleElement.textContent = "玩家评论"; // 可以根据需要修改
+    titleElement.textContent = "Player Reviews"; // 可以根据需要修改
 
     commentData.forEach(item => {
       const commentItem = document.createElement('div');
