@@ -32,12 +32,12 @@ function getHeaderHTML() {
 
                     <div class="flex items-center ml-auto space-x-4">
                         <div class="hidden md:flex items-center space-x-2">
-                            <a href="/about" id="my_record" data-i18n="nav.about" 
+                            <a href="/new-games" id="my_record" data-i18n="nav.about" 
                                 style="font-family: 'font_content_title_bold_small';"  
                                 class="px-4 py-2 rounded-md text-white hover:bg-[#363744] hover:text-gray-200">
                                 New
                             </a>
-                            <a href="/privacy" id="pricing-link" data-i18n="nav.privacy"
+                            <a href="/hot-games" id="pricing-link" data-i18n="nav.privacy"
                                 style="font-family: 'font_content_title_bold_small';"   
                                 class="px-4 py-2 rounded-md text-white hover:bg-[#363744] hover:text-gray-200">
                                 Hot
@@ -55,11 +55,11 @@ function getHeaderHTML() {
 
                 <div id="mobile-menu" class="hidden md:hidden">
                     <div class="px-2 pt-2 pb-3 space-y-1 bg-black/20 backdrop-blur-lg rounded-lg mt-2">
-                        <a href="/about" id="mobile-my-record" data-i18n="nav.about"
+                        <a href="/new-games" id="mobile-my-record" data-i18n="nav.about"
                             class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">
                             New
                         </a>
-                        <a href="/privacy" id="mobile-pricing" data-i18n="nav.privacy"
+                        <a href="/hot-games" id="mobile-pricing" data-i18n="nav.privacy"
                             class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">
                             Hot
                         </a>
