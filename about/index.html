@@ -10,19 +10,19 @@
 	<link rel="canonical" href="https://history-timeline.org/" />
 
 	<!-- 通用部分 -->
-	<link rel="stylesheet" href="../static/tailwind.css">
-	<link rel="stylesheet" href="../static/css/home.css">
-	<script src="../static/tailwind.js"></script>
-    <script src="../static/js/my-loading-util.js"></script>
-    <script src="../static/js/my-common-util.js"></script>
-	<script src="../static/js/language-dropdown.js"></script>
-	<script src="../static/js/language-config.js"></script>
-	<script src="../static/js/root-header.js"></script>
-	<script src="../static/js/root-footer.js"></script>
-	<script src="../static/js/language-manager.js"></script>
+	<link rel="stylesheet" href="/static/tailwind.css">
+	<link rel="stylesheet" href="/static/css/home.css">
+	<script src="/static/tailwind.js"></script>
+    <script src="/static/js/my-loading-util.js"></script>
+    <script src="/static/js/my-common-util.js"></script>
+	<script src="/static/js/language-dropdown.js"></script>
+	<script src="/static/js/language-config.js"></script>
+	<script src="/static/js/root-header.js"></script>
+	<script src="/static/js/root-footer.js"></script>
+	<script src="/static/js/language-manager.js"></script>
 
 	<!-- 不通用-->
-	<script src="../static/js/list_data.js"></script>
+	<script src="/static/js/list_data.js"></script>
 
 
 
@@ -31,83 +31,18 @@
 <body class="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white font-sans">
 
 	<!-- header begin -->
-
-	<header>
-        <nav class="fixed w-full z-50 glass">
-            <div class="mx-auto px-6 sm:px-6 lg:px-6">
-                <div class="flex justify-start h-20 items-center">
-                    <a href="../" class="flex items-center space-x-3 cursor-pointer">
-                        <div class="w-10 h-10 bg-gradient-to-r from-[#FF3366] to-[#9D34DA] rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5v11m-6-4h12" />
-                                <circle cx="12" cy="12" r="2.5" fill="currentColor" />
-                            </svg>
-                        </div>
-                        <span class="text-xl font-bold bg-gradient-to-r from-[#FF3366] to-[#9D34DA] bg-clip-text text-transparent" data-i18n="nav.common_title">
-                            Common Title 22
-                        </span>
-                    </a>
-
-                    <div class="flex items-center ml-auto space-x-4">
-                        <div class="hidden md:flex items-center space-x-2">
-                            <a href="../about" id="my_record" data-i18n="nav.about" 
-                                class="px-4 py-2 rounded-md text-gray-300 hover:text-white bg-gray-800/30 hover:bg-white/20 active:bg-white shadow-none hover:shadow-sm active:shadow-inner">
-                                About
-                            </a>
-                            <a href="../privacy" id="pricing-link" data-i18n="nav.privacy" 
-                                class="px-4 py-2 rounded-md text-gray-300 hover:text-white bg-gray-800/30 hover:bg-white/20 active:bg-white shadow-none hover:shadow-sm active:shadow-inner">
-                                Privacy
-                            </a>
-                        </div>
-
-                        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                            </svg>
-                        </button>
-
-                        <button id="language-selector" 
-                            class="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors px-4 py-2 rounded-md bg-gray-800/30 hover:bg-white/20 hover:shadow-sm active:shadow-inner">
-                            <svg class="language-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                <path d="M2 12h20"></path>
-                            </svg>
-                            <span id="current-language" data-i18n="nav.language">English</span>
-                            <svg class="language-arrow language-arrow-icon w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div id="mobile-menu" class="hidden md:hidden">
-                    <div class="px-2 pt-2 pb-3 space-y-1 bg-black/20 backdrop-blur-lg rounded-lg mt-2">
-                        <a href="../about" id="mobile-my-record" data-i18n="nav.about"
-                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">
-                            About
-                        </a>
-                        <a href="../privacy" id="mobile-pricing" data-i18n="nav.privacy"
-                            class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">
-                            Privacy
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <header class="fixed w-full  bg-[#1f202f] top-0 backdrop-blur border-b border-white/5 z-50">
     </header>
-
     <script>
         initializeHeader()
     </script>
-
-<!-- header end -->
+    <!-- header end -->
 
 
 		<div class="pt-32 ">
-				<a href="../" data-i18n="nav.home">Home</a>
-				<a href="../games/" data-i18n="nav.games">Games</a>
-				<a href="../about/" data-i18n="nav.about">About</a>
+				<a href="/" data-i18n="nav.home">Home</a>
+				<a href="/games/" data-i18n="nav.games">Games</a>
+				<a href="/about/" data-i18n="nav.about">About</a>
 				<button id="language-selector">
 					<span data-i18n="nav.language">English</span>
 				</button>
@@ -124,50 +59,12 @@
 
 
 	<!-- footer begin -->
-
-	<footer class="mt-4 bg-gradient-to-br from-[#1a1a2e]/80 to-[#16213e]/90 ">
-        <div class="py-8">
-            <div class="px-14 flex flex-col md:flex-row md:justify-between gap-8">
-                <div class="mb-6 md:mt-10">
-                    <a href="../" class="flex items-center justify-center md:justify-start">
-                        <div class="w-10 h-10 bg-gradient-to-r from-[#FF3366] to-[#9D34DA] rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5v11m-6-4h12" />
-                                <circle cx="12" cy="12" r="2.5" fill="currentColor" />
-                            </svg>
-                        </div>
-                        <span class="text-xl ml-4 font-bold bg-gradient-to-r from-[#FF3366] to-[#9D34DA] bg-clip-text text-transparent" data-i18n="nav.common_title">
-                            Common Title
-                        </span>
-                    </a>
-                </div>
-
-                <div class="flex flex-wrap justify-end">
-                    <div class="ml-6 flex flex-col items-end">
-                        <h2 class="mb-4 text-medium font-semibold uppercase text-gray-200" data-i18n="footer.legal">Legal</h2>
-                        <ul class="flex flex-col items-end text-gray-400 font-medium">
-                            <li class="mb-2">
-                                <a href="../about/" class="hover:text-gray-200 transition-colors duration-300" target="_blank" data-i18n="nav.about">
-                                    About</a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="../privacy/" class="hover:text-gray-200 transition-colors duration-300" target="_blank" data-i18n="nav.privacy">
-                                    Privacy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="my-10 border-white/5" />
-
-            <div class="mx-auto">
-                <p class="text-center font-sans text-gray-400 text-sm" data-i18n="footer.copyright">&copy; 2025 Common Footer .</p>
-            </div>
-        </div>
+    <footer class="mt-4 bg-[#13141d]">
     </footer>
-	
-<!-- footer end -->
+    <script>
+        initializeFooter()
+    </script>
+	<!-- footer end -->
 
 
 </body>

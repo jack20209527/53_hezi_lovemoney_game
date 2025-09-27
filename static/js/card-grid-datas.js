@@ -890,7 +890,7 @@ const games_data = [
   }
 ]
 
-const home_main_game_item = games_data[0]
+// const home_main_game_item = games_data[0]
 /**
  * new
  * new html页面的grid数据 前12个
@@ -901,5 +901,5 @@ const new_html_data = games_data.slice(1, 13);
 // 首页 - 右侧 - 推荐游戏数据  中间8个
 const home_html_right_data = games_data.slice(13, 22);
 
-    // 首页 - 右侧 - 中间下面热门游戏推荐 最后8个
+// 首页 - 右侧 - 中间下面热门游戏推荐 最后8个
 const home_html_hot_data = games_data.slice(22);
