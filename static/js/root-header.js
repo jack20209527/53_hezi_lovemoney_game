@@ -21,8 +21,9 @@ function getHeaderHTML() {
                 <div class="flex justify-start h-16 items-center">
                     <a href="/" class="flex items-center cursor-pointer">
                         <div class="rounded-lg flex items-center justify-center">
-                            <img alt="Good Game" class="w-10 h-10 logo-hover" src="/static/image/logo.jpg"/>
+                            <img id="id_nav_logo_image" alt="love money game" class="w-10 h-10 logo-hover" src="/static/image/logo.jpg"/>
                         </div>
+
                         <p class="text-2xl ml-2"
                             style="font-family: 'font_common_nav_title';" 
                             data-i18n="nav.common_title">

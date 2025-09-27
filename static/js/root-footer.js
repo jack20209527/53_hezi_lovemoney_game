@@ -5,12 +5,7 @@ function getFooterHTML() {
             <div class="px-14 flex flex-col md:flex-row md:justify-between gap-8">
                 <div class="mb-6 md:mt-10">
                     <a href="/" class="flex items-center justify-center md:justify-start">
-                        <div class="w-10 h-10 bg-[#6344f5] rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5v11m-6-4h12" />
-                                <circle cx="12" cy="12" r="2.5" fill="currentColor" />
-                            </svg>
-                        </div>
+                        <img src="/static/image/logo.jpg" alt="credit_cart" class="w-10 h-10 logo-hover">
                         <p class="text-2xl ml-2"
                                 style="font-family: 'font_common_nav_title';" 
                                 data-i18n="nav.common_title" >
