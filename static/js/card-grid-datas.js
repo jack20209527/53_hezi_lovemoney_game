@@ -898,6 +898,8 @@ const games_data = [
  */
 const new_html_data = games_data.slice(1, 13);
 
+const hot_html_data = games_data.slice(14, 28);
+
 // 首页 - 右侧 - 推荐游戏数据  中间8个
 const home_html_right_data = games_data.slice(13, 22);
 
